@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div id="menu">
+        <table>
+            <tbody>
+            <tr>
+            <th onclick="pause()">
+    <img id="play" src="images/buttons/pause.png">
+            </th>
+            <th onclick="mute()">
+    <img id="sound" src="images/buttons/mute.png">  
+            </th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="paused">
+        <div id="centerMenu">
+            <center>
+        <div onclick="pause()" id="resume" unselectable="on">Resume</div>
+        <div onclick="play()" id="start" unselectable="on">Play</div>
+                </center>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
