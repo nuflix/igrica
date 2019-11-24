@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+<body>
+    <canvas id="canvas"></canvas>
+
+    <img src="background.jpg" id="background" style="display: none;">
+    <img src="jez.right.png" id="jezRight" style="display: none;">
+    <img src="jez.left.png" id="jezLeft" style="display: none;">
+    <img src="ball.png" id="ball" style="display: none;">
+    <img src="ball1.png" id="ball1" style="display: none;">
+    <img src="ball2.png" id="ball2" style="display: none;">
+    
+    <div id="menu">
+        <table>
+            <tbody>
+            <tr>
+            <th onclick="pause()">
+    <img id="play" src="images/buttons/pause.png">
+            </th>
+            <th onclick="mute()">
+    <img id="sound" src="images/buttons/mute.png">  
+            </th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="paused">
+        <div id="centerMenu">
+            <center>
+        <div onclick="pause()" id="resume" unselectable="on">Resume</div>
+        <div onclick="play()" id="start" unselectable="on">Play</div>
+                </center>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
